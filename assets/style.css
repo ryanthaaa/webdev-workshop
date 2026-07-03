@@ -1,3 +1,11 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +13,11 @@
 }
 
 body {
-  background-color: #f3f6fb;
-  color: #222;
+  background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #222;
 }
 
 header {
@@ -166,6 +176,54 @@ footer {
 
 .back-link:hover {
   background-color: #1638b8;
+}
+
+.like-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #ccd6dd;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  color: #657786;
+  transition: all 0.2s ease;
+}
+
+.heart-icon {
+  fill: none;
+  stroke: #657786;
+  stroke-width: 2;
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+}
+
+/* Active State Styles */
+.like-button.liked {
+  color: #e0245e;
+  border-color: #e0245e;
+  background-color: #fce8f0;
+}
+
+.like-button.liked .heart-icon {
+  fill: #e0245e;
+  stroke: #e0245e;
+}
+
+#like-count {
+  font-size: 18px;
+  font-weight: bold;
+  color: #14171a;
 }
 
 @media (max-width: 700px) {

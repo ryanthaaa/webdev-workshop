@@ -1,48 +1,59 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Profil Rian Peserta</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=thumb_up" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=thumb_up" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <title>Profil Rian Peserta</title>
+</head>
 
-    <link rel="stylesheet" href="../assets/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Profil Peserta</h1>
-      <p>Halaman detail profil peserta Webdev Workshop.</p>
-    </header>
+<body>
+  <header>
+    <h1>Profil Peserta</h1>
+    <p>Halaman detail profil peserta Webdev Workshop.</p>
+  </header>
 
-    <main class="profile-detail">
-      <img
-        src="../photo/wokwok.jpg"
-        alt="Foto Profil Contoh Peserta"
-        class="profile-photo"
-      />
+  <main class="profile-detail">
+    <img src="../photo/wokwok.jpg" alt="Foto Profil Contoh Peserta" class="profile-photo" />
 
-      <section class="profile-info">
-        <h2>Ryanthaaa</h2>
-        <p><strong>NIM:</strong> 42530033</p>
-        <p><strong>Program Studi:</strong> Teknologi Informasi</p>
+    <section class="profile-info">
+      <h2>Ryanthaaa</h2>
+      <p><strong>NIM:</strong> 42530033</p>
+      <p><strong>Program Studi:</strong> Teknologi Informasi</p>
 
-        <h3>Tentang Saya</h3>
-        <p>
-          Saya adalah peserta Webdev Workshop yang sedang belajar HTML, CSS,
-          Git, dan GitHub (user Julian to the bone).
-        </p>
+      <h3>Tentang Saya</h3>
+      <p>
+        Saya adalah peserta Webdev Workshop yang sedang belajar HTML, CSS,
+        Git, dan GitHub (user Julian to the bone).
+      </p>
 
-        <h3>Minat</h3>
-        <ul>
-          <li>Scroll Fesnuk</li>
-          <li>Mancing (Mainin Alat Kancing)</li>
-          <li>Otw Immortal</li>
-        </ul>
+      <h3>Minat</h3>
+      <ul>
+        <li>Scroll Fesnuk</li>
+        <li>Mancing (Mainin Alat Kancing)</li>
+        <li>Otw Immortal</li>
+      </ul>
 
-        <a href="../index.html" class="back-link">Kembali ke halaman utama</a>
-      </section>
-    </main>
+      <div class="like-container">
+        <button id="like-btn" class="like-button">
+          <span class="material-symbols-outlined">
+            thumb_up 
+          </span>
+          Like Coy
+        </button>
+        <span id="like-count">0</span>
+      </div>
 
-    <script src="../assets/script.js"></script>
-  </body>
+      <a href="../index.html" class="back-link">Kembali ke halaman utama</a>
+    </section>
+  </main>
+
+  <script src="../assets/script.js"></script>
+</body>
+
 </html>
